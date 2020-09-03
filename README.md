@@ -1,5 +1,5 @@
-# springboot-restfulapi-app
-Spring boot application project using restful API, showing different ways to persist objects in DB </br>
+# springboot-restfulapi-microservice
+A Spring boot mircorservice using restful API, showing different ways to persist objects in DB </br>
 * Spring data JPA
 * JPA (entity manager)
 * Spring JDBC Template
