@@ -50,6 +50,8 @@ public class HomeController {
 	private QueryExecutionByJDBC plainOldJdbc;
 	
 	@GetMapping(value="/employee/{name}")
+	@ApiOperation(code = 200, value = "Fetch Employee with employee name and a link to see all the employees", 
+				  notes = "You can see Employee details for the username passed as well as a hyperlink to view rest of the employees", response = User.class)
 	public User getEmployee(@PathVariable String name){
 		logger.debug("Getting employee for name: {}",name);
 		User emp=employeeDao.findByName(name);
@@ -66,6 +68,7 @@ public class HomeController {
 	}
 	
 	@GetMapping(value="/employee/{id}/{name}", produces=MediaType.APPLICATION_JSON_VALUE)
+	@ApiOperation(code = 200, value = "Using Spring Data-JPA, fetch employee for emp id and emp name", notes = "Using Spring Data-JPA, fetch employee", response = User.class)
 	public User getUserByIdAndName(@PathVariable Long id, @PathVariable  String name){
 		logger.debug("Getting employee for id : {} and name: {}", id, name);
 		
