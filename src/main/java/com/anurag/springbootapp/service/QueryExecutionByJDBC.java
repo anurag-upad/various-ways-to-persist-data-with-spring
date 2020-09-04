@@ -76,8 +76,6 @@ public class QueryExecutionByJDBC {
 		Assert.isTrue("New deptt".equals(jackFromPersistencContext2.getDepartment()), "Both instances are same");
 		Assert.isTrue(jack.getEid().equals(jackFromPersistencContext.getEid()), "Both instances have same ids");
 		
-		//User jill=new User("Jill","Finance");
-		
 	}
 	
 	public User saveUserAndAddress(User user, UserAddress userAddress){

@@ -33,9 +33,9 @@ import com.anurag.springbootapp.service.QueryExecutionByJDBC;
 import io.swagger.annotations.ApiOperation;
 
 @RestController
-public class HomeController {
+public class EmployeeController {
 	
-	private static Logger logger=LoggerFactory.getLogger(HomeController.class.getName());
+	private static Logger logger=LoggerFactory.getLogger(EmployeeController.class.getName());
 	
 	@Autowired
 	private EmployeeDao employeeDao;
