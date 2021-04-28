@@ -27,7 +27,8 @@ public class SwaggerConfig
 	public Docket mainConfig()
 	{
 		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors.withClassAnnotation(Api.class)).paths(PathSelectors.any()).build()
+				.apis(RequestHandlerSelectors.withClassAnnotation(Api.class))
+				.paths(PathSelectors.any()).build()
 				.genericModelSubstitutes(ResponseEntity.class);
 	}
 }

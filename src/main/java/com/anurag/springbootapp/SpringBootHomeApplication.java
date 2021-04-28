@@ -27,8 +27,6 @@ public class SpringBootHomeApplication {
 			
 		}*/
 		
-		BinarySearchImpl binarySearchImpl=applicationContext.getBean(BinarySearchImpl.class);
-		binarySearchImpl.binarySearch(new int[]{10,2,9,3}, 3);
 	}
 
 }

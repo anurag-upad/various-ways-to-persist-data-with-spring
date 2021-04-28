@@ -1,4 +1,4 @@
-package com.anurag.springbootapp;
+package com.anurag.springbootapp.controller;
 
 import java.net.URI;
 import java.util.List;
